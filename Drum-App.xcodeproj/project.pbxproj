@@ -7,7 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DB4D30E62A61CC8E00C08F14 /* Drum_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4D30E52A61CC8E00C08F14 /* Drum_AppApp.swift */; };
+		DB217A602A6455AB005D5AAF /* RecorderDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB217A5F2A6455AB005D5AAF /* RecorderDelegate.swift */; };
+		DB217A622A646197005D5AAF /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB217A612A646197005D5AAF /* Player.swift */; };
+		DB217A642A646788005D5AAF /* PlayerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB217A632A646788005D5AAF /* PlayerDelegate.swift */; };
+		DB448A522A632E930038BA1C /* Recorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB448A512A632E930038BA1C /* Recorder.swift */; };
+		DB4D30E62A61CC8E00C08F14 /* Drum_App.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4D30E52A61CC8E00C08F14 /* Drum_App.swift */; };
 		DB4D30E82A61CC8E00C08F14 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4D30E72A61CC8E00C08F14 /* ContentView.swift */; };
 		DB4D30EA2A61CC8F00C08F14 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB4D30E92A61CC8F00C08F14 /* Assets.xcassets */; };
 		DB4D30ED2A61CC8F00C08F14 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB4D30EC2A61CC8F00C08F14 /* Preview Assets.xcassets */; };
@@ -34,8 +38,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DB217A5F2A6455AB005D5AAF /* RecorderDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecorderDelegate.swift; sourceTree = "<group>"; };
+		DB217A612A646197005D5AAF /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		DB217A632A646788005D5AAF /* PlayerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerDelegate.swift; sourceTree = "<group>"; };
+		DB448A512A632E930038BA1C /* Recorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recorder.swift; sourceTree = "<group>"; };
 		DB4D30E22A61CC8E00C08F14 /* Drum-App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Drum-App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		DB4D30E52A61CC8E00C08F14 /* Drum_AppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Drum_AppApp.swift; sourceTree = "<group>"; };
+		DB4D30E52A61CC8E00C08F14 /* Drum_App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Drum_App.swift; sourceTree = "<group>"; };
 		DB4D30E72A61CC8E00C08F14 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		DB4D30E92A61CC8F00C08F14 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DB4D30EC2A61CC8F00C08F14 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -44,6 +52,7 @@
 		DB4D30FC2A61CC8F00C08F14 /* Drum-AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Drum-AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB4D31002A61CC8F00C08F14 /* Drum_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Drum_AppUITests.swift; sourceTree = "<group>"; };
 		DB4D31022A61CC8F00C08F14 /* Drum_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Drum_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		DB4D31102A61D65100C08F14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +103,13 @@
 		DB4D30E42A61CC8E00C08F14 /* Drum-App */ = {
 			isa = PBXGroup;
 			children = (
-				DB4D30E52A61CC8E00C08F14 /* Drum_AppApp.swift */,
+				DB4D31102A61D65100C08F14 /* Info.plist */,
+				DB4D30E52A61CC8E00C08F14 /* Drum_App.swift */,
 				DB4D30E72A61CC8E00C08F14 /* ContentView.swift */,
+				DB448A512A632E930038BA1C /* Recorder.swift */,
+				DB217A5F2A6455AB005D5AAF /* RecorderDelegate.swift */,
+				DB217A612A646197005D5AAF /* Player.swift */,
+				DB217A632A646788005D5AAF /* PlayerDelegate.swift */,
 				DB4D30E92A61CC8F00C08F14 /* Assets.xcassets */,
 				DB4D30EB2A61CC8F00C08F14 /* Preview Content */,
 			);
@@ -257,8 +271,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB448A522A632E930038BA1C /* Recorder.swift in Sources */,
 				DB4D30E82A61CC8E00C08F14 /* ContentView.swift in Sources */,
-				DB4D30E62A61CC8E00C08F14 /* Drum_AppApp.swift in Sources */,
+				DB217A602A6455AB005D5AAF /* RecorderDelegate.swift in Sources */,
+				DB217A622A646197005D5AAF /* Player.swift in Sources */,
+				DB4D30E62A61CC8E00C08F14 /* Drum_App.swift in Sources */,
+				DB217A642A646788005D5AAF /* PlayerDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -346,6 +364,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -401,6 +421,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -416,12 +438,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Drum-App/Preview Content\"";
 				DEVELOPMENT_TEAM = A8UPUGB345;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Drum-App/Info.plist";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "\"we need microphone\"";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -434,6 +459,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.jake.Drum-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -445,12 +471,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Drum-App/Preview Content\"";
 				DEVELOPMENT_TEAM = A8UPUGB345;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Drum-App/Info.plist";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "\"we need microphone\"";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -463,6 +492,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.jake.Drum-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
